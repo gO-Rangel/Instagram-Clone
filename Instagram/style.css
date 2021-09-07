@@ -41,10 +41,11 @@
   width: 270px;
   height: 38px;
   margin-top: 1.5em;
+  padding-left: 0.6em;
 }
 
-.login-btn::placeholder {
-  padding-left: 0.3em;
+.login-btn:focus {
+  outline: #b3b3b3;
 }
 
 .enter-btn {
@@ -90,10 +91,12 @@
 
 .login-with-facebook > i {
   font-size: 1.4em;
+  cursor: pointer;
 }
 
 .login-with-facebook > p {
   padding-left: 0.6em;
+  cursor: pointer;
 }
 
 /* forgot-password */
