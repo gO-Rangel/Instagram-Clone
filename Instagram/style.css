@@ -18,10 +18,11 @@
 }
 
 .logo-container {
-  width: 260px;
+  width: 150px;
 }
 
 .logo-container img {
+  margin-left: 55px;
   width: 100%;
   object-fit: cover;
 }
@@ -38,6 +39,8 @@
 }
 
 .login-btn {
+  background-color: #f3f2f2;
+  border: 1px solid #c2c7c2;
   width: 270px;
   height: 38px;
   margin-top: 1.5em;
@@ -134,10 +137,33 @@
   font-weight: 500;
 }
 
+/* MOBILE */
+
+.mobile p {
+  margin-top: 13px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.badge-container {
+  margin: 15px 0 0 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.badge-container > img ~ img {
+  padding-left: 10px;
+}
+
+.badge {
+  width: 135px;
+}
+
 /* FOOTER */
 
 .footer-list {
-  width: 900px;
+  width: 750px;
   margin: 80px auto 10px auto;
   list-style: none;
 
@@ -159,13 +185,50 @@
 }
 
 .copy {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
   font-size: 0.8em;
-  text-align: center;
   margin-bottom: 30px;
+  list-style: none;
+  color: #a1a1a1;
+}
+
+.language {
+  cursor: pointer;
+  position: relative;
+}
+
+.copyrigth {
+  padding-left: 0.5em;
+}
+
+.list-languages {
+  display: none;
   list-style: none;
 }
 
-.copy a {
-  color: #a1a1a1;
+.active ul li a {
+  padding-left: 0.3em;
+  color: #000;
   text-decoration: none;
+}
+
+.active ul {
+  width: 145px;
+  height: 360px;
+  overflow-y: scroll;
+  position: absolute;
+  bottom: 20px;
+  display: block;
+  background: #fff;
+}
+
+.active ul li:hover {
+  background-color: #0076fd;
+}
+
+.fliped {
+  display: inline-block;
+  transform: rotateZ(180deg);
 }
